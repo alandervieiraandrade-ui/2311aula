@@ -17,5 +17,5 @@ Apresentar meu perfil, minhas habilidades e meus projetos para recrutadoras e re
 3. Dê dois cliques no arquivo `index.html` para abrir no navegador.
 
 ## Contato
-- E-mail: seuemail@exemplo.com
+- E-mail: alandervieiraandrade@gmail.com
 - GitHub: https://github.com/alandervieiraandrade-ui
