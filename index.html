@@ -1,15 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alander</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Alander Vieira Andrade, desenvolvedor front-end júnior.">
+  <title>Alander Vieira Andrade | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div></div>
-    </header>
+    
+  <!-- 01 · CABEÇALHO -->
+  <header class="topo">
+    <a class="logo" href="#inicio">Alander<span>.dev</span></a>
+    <button id="btn-menu" class="btn-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu" class="menu" aria-label="Menu principal">
+      <a href="#sobre">Sobre mim</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+      <button id="btn-tema" class="btn-tema" aria-label="Alternar tema claro e escuro">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 02 · INÍCIO -->
+    <section id="inicio" class="inicio">
+      <div class="inicio-texto">
+        <p class="ola">Olá, eu sou</p>
+        <h1>Alander Vieira Andrade</h1>
+        <p class="area">Desenvolvedor front-end júnior</p>
+        <p class="frase">Transformo ideias em páginas simples, rápidas e acessíveis.</p>
+        <div class="botoes">
+          <a class="botao" href="#contato">Baixar currículo</a>
+          <a class="botao botao-claro" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+      <img class="foto" src="img/foto.jpg" alt="Foto de Alander Vieira Andrade sorrindo">
+    </section>
+
+    <!-- 03 · SOBRE MIM -->
+    <section id="sobre" class="secao sobre">
+      <img class="sobre-img" src="img/sobre.jpg" alt="Alander trabalhando no computador">
+      <div>
+        <h2>Sobre mim</h2>
+        <p>Sou estudante de desenvolvimento web e busco minha primeira oportunidade de estágio ou vaga júnior. Gosto de aprender fazendo: cada projeto do curso virou um novo desafio de HTML, CSS e JavaScript.</p>
+        <ul class="dados">
+          <li><strong>Área:</strong> Desenvolvimento web</li>
+          <li><strong>Foco:</strong> Front-end</li>
+          <li><strong>Cidade:</strong> Itumbiara - GO</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 04 · HABILIDADES -->
+    <section id="habilidades" class="secao">
+      <h2>Habilidades</h2>
+      <div class="cartoes">
+        <article class="cartao"><h3>HTML5</h3><p>Estrutura semântica e acessível.</p></article>
+        <article class="cartao"><h3>CSS3</h3><p>Flexbox, Grid e design responsivo.</p></article>
+        <article class="cartao"><h3>JavaScript</h3><p>Eventos e manipulação do DOM.</p></article>
+        <article class="cartao"><h3>Git e GitHub</h3><p>Versionamento e commits organizados.</p></article>
+      </div>
+    </section>
+
+    <!-- 05 · PROJETOS -->
+    <section id="projetos" class="secao">
+      <h2>Projetos</h2>
+      <div class="filtros">
+        <button class="filtro ativo" data-filtro="todos">Todos</button>
+        <button class="filtro" data-filtro="concluido">Concluídos</button>
+        <button class="filtro" data-filtro="andamento">Em andamento</button>
+      </div>
+      <div class="cartoes">
+        <article class="cartao projeto" data-status="concluido">
+          <img src="img/projeto1.jpg" alt="Captura de tela da página AgroLog">
+          <h3>Página AgroLog</h3>
+          <p>Página criada nas aulas do curso com HTML e CSS.</p>
+          <p class="tags"><span>HTML</span><span>CSS</span></p>
+          <a href="https://github.com/alandervieiraandrade-ui
+/agrolog" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="cartao projeto" data-status="concluido">
+          <img src="img/projeto2.jpg" alt="Captura de tela da lista de tarefas">
+          <h3>Lista de tarefas</h3>
+          <p>Adiciona e remove tarefas usando JavaScript.</p>
+          <p class="tags"><span>HTML</span><span>JavaScript</span></p>
+          <a href="https://github.com/alandervieiraandrade-ui
+/lista-tarefas" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="cartao projeto" data-status="andamento">
+          <img src="img/projeto3.jpg" alt="Esboço do projeto de TCC">
+          <h3>Projeto do TCC</h3>
+          <p>Em andamento: tema provisório definido em grupo.</p>
+          <p class="tags"><span>Git</span><span>Em andamento</span></p>
+          <a href="https://github.com/SEU-USUARIO/tcc" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06 · CONTATO -->
+    <section id="contato" class="secao contato">
+      <div>
+        <h2>Contato</h2>
+        <p>Vamos conversar? Escreva pelo formulário ou use os links abaixo.</p>
+        <ul class="links">
+          <li><a href="mailto:alandervieiraandrade@gmail.com">seuemail@exemplo.com</a></li>
+          <li><a href="https://github.com/SEU-USUARIO" target="_blank" rel="noopener">github.com/SEU-USUARIO</a></li>
+          <li><a href="https://www.linkedin.com/in/SEU-USUARIO" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <form id="form-contato" novalidate>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit" class="botao">Enviar</button>
+        <p id="retorno" class="retorno" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 07 · RODAPÉ -->
+  <footer class="rodape">
+    <p>© <span id="ano">2026</span> Alander Vieira Andrade. Feito com HTML, CSS e JavaScript.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
