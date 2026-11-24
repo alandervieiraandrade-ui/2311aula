@@ -12,11 +12,10 @@ Apresentar meu perfil, minhas habilidades e meus projetos para recrutadoras e re
 - Git e GitHub
 
 ## Como abrir
-1. Baixe ou clone o repositório: `git clone https://github.com/alandervieiraandrade-ui
-/portfolio.git`
+1. Baixe ou clone o repositório: `git clone https://github.com/alandervieiraandrade-ui/2311aula.git
 2. Abra a pasta `portfolio`.
 3. Dê dois cliques no arquivo `index.html` para abrir no navegador.
 
 ## Contato
-- E-mail: alandervieiraandrade@gmail.com
-- GitHub: https://github.com/SEU-USUARIO
+- E-mail: seuemail@exemplo.com
+- GitHub: https://github.com/alandervieiraandrade-ui
